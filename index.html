@@ -117,7 +117,13 @@
 							</ul>
 							<!-- Optional: prevent spam -->
 							<input type="hidden" name="_captcha" value="false">
-							<input type="hidden" name="_next" value="https://your-portfolio-domain.com/thank-you.html">
+							<script>
+								const form = document.querySelector('form');
+								form.addEventListener('submit', (e) => {
+									alert('Thank you for your message! I will get back to you as soon as possible.');
+								});
+							</script>
+							<!--<input type="hidden" name="_next" value="https://your-portfolio-domain.com/thank-you.html">-->
 						</form>
 						</section>
 						<section class="split contact">
